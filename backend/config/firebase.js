@@ -1,8 +1,12 @@
 import { initializeApp, cert, getApps } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 import dotenv from "dotenv";
-
 dotenv.config();
+console.log(process.env.FIREBASE_PROJECT_ID);
+
+console.log(process.env.FIREBASE_CLIENT_EMAIL);
+
+console.log(process.env.FIREBASE_PRIVATE_KEY?.startsWith("-----BEGIN PRIVATE KEY-----"));
 
 const serviceAccount = {
   type: "service_account",

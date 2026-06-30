@@ -11,23 +11,29 @@ function DashboardCard({
       bg-white
       rounded-2xl
       shadow-lg
-      p-6
+      p-4
+      md:p-6
       cursor-pointer
       hover:scale-105
       hover:shadow-xl
-      transition
+      transition-all
+      duration-300
+      min-h-[170px]
+      flex
+      flex-col
+      justify-center
       "
     >
 
-      <div className="text-5xl">
+      <div className="text-4xl md:text-5xl">
         {icon}
       </div>
 
-      <h2 className="text-2xl font-bold mt-5">
+      <h2 className="text-lg md:text-2xl font-bold mt-4">
         {title}
       </h2>
 
-      <p className="text-gray-500 mt-2">
+      <p className="text-gray-500 text-sm md:text-base mt-2">
         {subtitle}
       </p>
 

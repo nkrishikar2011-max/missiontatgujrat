@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/results";
+const API = import.meta.env.VITE_API_URL + "/api/results";
 
 export async function saveResult(result, testId) {
 
